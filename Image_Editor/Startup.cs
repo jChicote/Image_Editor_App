@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Image_Editor_App
+namespace Image_Editor
 {
     public class Startup
     {

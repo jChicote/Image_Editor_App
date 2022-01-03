@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Image_Editor_App", "Image_Editor_App\Image_Editor_App.csproj", "{0A248235-BE27-4032-8931-0ED588E2FFE2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Image_Editor", "Image_Editor.csproj", "{B956ECE1-58FD-4F23-A3E8-FC93EC9FB320}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0A248235-BE27-4032-8931-0ED588E2FFE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0A248235-BE27-4032-8931-0ED588E2FFE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0A248235-BE27-4032-8931-0ED588E2FFE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0A248235-BE27-4032-8931-0ED588E2FFE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B956ECE1-58FD-4F23-A3E8-FC93EC9FB320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B956ECE1-58FD-4F23-A3E8-FC93EC9FB320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B956ECE1-58FD-4F23-A3E8-FC93EC9FB320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B956ECE1-58FD-4F23-A3E8-FC93EC9FB320}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F8510189-6E42-49CA-A656-1630B1F58732}
+		SolutionGuid = {0887AA63-423D-4C01-B8A1-08C684040EA4}
 	EndGlobalSection
 EndGlobal

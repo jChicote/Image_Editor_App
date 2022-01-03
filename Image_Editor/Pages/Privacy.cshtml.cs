@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Image_Editor_App.Pages
+namespace Image_Editor.Pages
 {
     public class PrivacyModel : PageModel
     {
