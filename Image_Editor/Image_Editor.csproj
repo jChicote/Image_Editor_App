@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>
@@ -9,7 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AntiXSS" Version="4.3.0" />
     <PackageReference Include="bootstrap" Version="5.1.2" />
+    <PackageReference Include="Onvif.IP.Camera.Viewer" Version="11.2.0" />
   </ItemGroup>
 
 </Project>
