@@ -7,7 +7,7 @@
     <h6>Apply to any filter to image that yopu drop in.</h6>
 </div>
 
-<div class="display-camera-element">
+<div id="canvas" class="display-camera-element">
     <video id="webcamView"></video>
 </div>
 
@@ -33,7 +33,7 @@
             jpeg_quality: 100
         });
 
-        Webcam.attach('#webcamView');
+        Webcam.attach('#canvas');
 
         /*mediaDevices.getUserMedia({
             video: true,
