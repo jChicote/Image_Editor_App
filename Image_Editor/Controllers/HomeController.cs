@@ -28,6 +28,11 @@ namespace Image_Editor.Controllers
             return View();
         }
 
+        public IActionResult CaptureImage()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -8,9 +8,46 @@
 </div>
 
 <div class="display-camera-element">
-
-    <img alt="This is the display preview element"/>
+    <video id="webcamView"></video>
 </div>
 
-<asp:button class="btn btn-primary">Begin Video View</asp:button>
+<button id="liveButton" class="btn btn-primary">Begin Video View</button>
 <asp:button class="btn btn-primary"> Capture Image </asp:button>
+
+<script type="text/javascript" src="~/lib/webcamjs/webcam.js"></script>
+
+<script>
+
+    // Display the webcam view to screen
+
+    const webCamViewElement = document.getElementById('webcamView');
+    const liveTriggerButton = document.getElementById('liveButton');
+    const canvasElement = document.getElementById('canvas');
+    var mediaDevices = navigator.mediaDevices;
+
+    function openWebCamera() {
+        Webcam.set({
+            width: 500,
+            height: 375,
+            image_format: 'png',
+            jpeg_quality: 100
+        });
+
+        Webcam.attach('#webcamView');
+
+        /*mediaDevices.getUserMedia({
+            video: true,
+            audio: true,
+        }).then((stream) => {
+            webCamViewElement.srcObject = stream;
+            webCamViewElement.addEventListener("loadedmetadata", () => {
+                webCamViewElement.play();
+            });
+        }).catch(alert);*/
+    }
+
+    liveTriggerButton.addEventListener("click", () => {
+        openWebCamera();
+    })
+
+</script>

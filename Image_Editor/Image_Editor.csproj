@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -8,6 +8,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\lib\webcamjs\build.sh" />
+    <None Include="wwwroot\lib\webcamjs\demos\shutter.ogg" />
+    <None Include="wwwroot\lib\webcamjs\DOCS.md" />
+    <None Include="wwwroot\lib\webcamjs\flash\com\adobe\images\BitString.as" />
+    <None Include="wwwroot\lib\webcamjs\flash\com\adobe\images\JPGEncoder.as" />
+    <None Include="wwwroot\lib\webcamjs\flash\com\adobe\images\PNGEncoder.as" />
+    <None Include="wwwroot\lib\webcamjs\flash\mx\utils\Base64Encoder.as" />
+    <None Include="wwwroot\lib\webcamjs\flash\Webcam.as" />
+    <None Include="wwwroot\lib\webcamjs\flash\Webcam.fla" />
+    <None Include="wwwroot\lib\webcamjs\LICENSE" />
+    <None Include="wwwroot\lib\webcamjs\README.md" />
+    <None Include="wwwroot\lib\webcamjs\webcam.js" />
+    <None Include="wwwroot\lib\webcamjs\webcam.min.js" />
+    <None Include="wwwroot\lib\webcamjs\webcam.swf" />
     <None Include="wwwroot\Styles\home-page-styles.css" />
   </ItemGroup>
 
@@ -15,6 +29,10 @@
     <PackageReference Include="AntiXSS" Version="4.3.0" />
     <PackageReference Include="bootstrap" Version="5.1.2" />
     <PackageReference Include="Onvif.IP.Camera.Viewer" Version="11.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Content\WebcamView\" />
   </ItemGroup>
 
 </Project>

@@ -4,8 +4,11 @@
 .display-camera-element {
     margin-top: 5vh;
     margin-bottom: 5vh;
-    text-align: center;
-    width: 40vw;
-    height: 30vh;
-    background-color: grey;
+    border: 2px solid black;
+}
+
+.display-camera-element video {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
 }
