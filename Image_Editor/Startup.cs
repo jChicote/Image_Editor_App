@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Image_Editor.Data;
 
 namespace Image_Editor
 {
@@ -24,6 +26,9 @@ namespace Image_Editor
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<ImageDB_EditorContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("ImageDB_EditorContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

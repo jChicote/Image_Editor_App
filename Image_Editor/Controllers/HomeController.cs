@@ -28,8 +28,14 @@ namespace Image_Editor.Controllers
             return View();
         }
 
+        public IActionResult Image_History()
+        {
+            return View();
+        }
+
         public IActionResult CaptureImage()
         {
+            Console.WriteLine("This is working");
             return View();
         }
 

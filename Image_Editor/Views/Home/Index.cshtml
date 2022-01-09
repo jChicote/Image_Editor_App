@@ -12,7 +12,7 @@
 </div>
 
 <button id="liveButton" class="btn btn-primary">Begin Video View</button>
-<asp:button class="btn btn-primary"> Capture Image </asp:button>
+<asp:button id="captureButton" class="btn btn-primary" runat="server" OnClick="CaptureImage"> Capture Image </asp:button>
 
 <script type="text/javascript" src="~/lib/webcamjs/webcam.js"></script>
 
@@ -22,6 +22,7 @@
 
     const webCamViewElement = document.getElementById('webcamView');
     const liveTriggerButton = document.getElementById('liveButton');
+    const captureButton = document.getElementById('captureButton');
     const canvasElement = document.getElementById('canvas');
     var mediaDevices = navigator.mediaDevices;
 
@@ -46,8 +47,16 @@
         }).catch(alert);*/
     }
 
+    function captureImage() {
+
+    }
+
     liveTriggerButton.addEventListener("click", () => {
         openWebCamera();
+    })
+
+    captureButton.addEventListener("click", () => {
+
     })
 
 </script>
